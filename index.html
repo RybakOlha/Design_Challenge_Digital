@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design Challenge Digital · 01–02</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/data.js"></script>
+    <script defer src="assets/js/extra.js"></script>
+    <script defer src="assets/js/app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">AI × FIGMA DESIGN LAB <span> / DIGITAL 01–02</span></div>
+      <button type="button" id="theme" aria-pressed="false">Змінити тему</button>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="page-title">
+        <small>10 КЛАС · ПАРИ 01–04</small>
+        <h1 id="page-title">Design Challenge<span> Digital.</span></h1>
+        <p>Шість незалежних випробувань. Аналізуй, обчислюй, аргументуй.</p>
+      </section>
+      <fieldset class="toolbar">
+        <legend>Дані учня</legend>
+        <label for="student">Ім’я та прізвище<input id="student" autocomplete="name"></label>
+        <label for="className">Клас<input id="className"></label>
+        <label for="variant">Варіант
+          <select id="variant">
+            <option value="A">А</option>
+            <option value="B">Б</option>
+          </select>
+        </label>
+        <span id="status" role="status"></span>
+      </fieldset>
+      <nav aria-label="Завдання">
+        <button type="button" data-tab="0">01 · Crossword</button>
+        <button type="button" data-tab="1">02 · Bug Hunt</button>
+        <button type="button" data-tab="2">03 · Responsive Math</button>
+        <button type="button" data-tab="3">04 · Design Puzzle</button>
+        <button type="button" data-tab="4">05 · Figma Logic</button>
+        <button type="button" data-tab="5">06 · AI Fact Check</button>
+      </nav>
+      <section id="work" aria-label="Робоча область"></section>
+      <fieldset class="toolbar">
+        <legend>Збереження результатів</legend>
+        <button type="button" id="txt">Експорт TXT для Moodle</button>
+        <button type="button" id="json">Резервна копія JSON</button>
+        <label for="restore">Відновити JSON<input type="file" id="restore" accept=".json,application/json"></label>
+      </fieldset>
+    </main>
+    <footer>Design Challenge Digital · Самоперевірка не замінює оцінювання вчителем.</footer>
+  </body>
+</html>
